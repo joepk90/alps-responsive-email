@@ -1,0 +1,672 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width"/>
+
+    <link rel="stylesheet" href="css/ink.css"> <!-- For testing only -->
+
+    <style type="text/css">
+      
+      /* Ink styles go here in production */
+      
+    </style>
+    <style type="text/css">
+
+table.columns .right-text-pad20,
+table.columns .text-pad-right20,
+table.column .right-text-pad20,
+table.column .text-pad-right20 {
+  padding-right: 20px;
+}
+
+
+  table[class="body"] .right-text-pad20,
+  table[class="body"] .text-pad-right20 {
+    padding-left: 20px !important;
+  }
+
+
+table.columns .text-pad20,
+table.column .text-pad20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+table.columns .text-pad-top,
+table.column .text-pad-top {
+  padding-top: 10px;
+}
+
+table.columns .text-pad-top20,
+table.column .text-pad-top20 {
+  padding-top: 20px;
+}
+
+table.container tr .text-pad-top-con-20,
+table.container tr .text-pad-top-con-20 {
+  padding-top: 20px;
+}
+
+table.container tr .text-pad-top-con-10,
+table.container tr .text-pad-top-con-10 {
+  padding-top: 10px;
+}
+
+
+
+
+
+table.columns .text-pad80,
+table.column .text-pad80 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+
+a {
+  color: #efefef;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff !important;
+}
+
+a:active {
+  color: #ffffff !important;
+}
+
+a:visited {
+  color: #ffffff !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+	
+	table.columns .img-pad-small,
+	table.column .img-pad-small {
+  		padding-left: 10px;
+  		padding-right: 10px;
+	
+}
+
+	table.columns .right-text-pad40,
+	table.columns .text-pad-right40,
+	table.column .right-text-pad40,
+	table.column .text-pad-right40 {
+  		padding-right: 70px;
+}
+}
+
+	.whitebackground {
+		background-color: #ffffff	
+	}
+
+	.mirror   {
+		  font-family:Arial, Helvetica, sans-serif;
+		  font-size:13px;
+		  line-height:18px;
+		  color: #aaaaaa;
+		  text-decoration: underline;
+	}
+
+
+      .titletable {
+		  background-color: #333333;
+	  }
+	  
+	  
+      .titletext {
+		  font-family:Arial, Helvetica, sans-serif;
+		  font-size:32px;
+		  line-height:18px;
+		  color: #ffffff;
+	  }	  
+	  
+	  
+	  .banner {
+		  background-image:url(images/mainbanner.jpg);
+		  background-repeat: no-repeat;
+		  background-size: cover;		 
+		  width: 600px; 
+	  }
+	  
+	  .bannerheight {
+		  height: 185px;
+	  }
+	  
+	  .headlinebig {
+		  font-family:Arial, Helvetica, sans-serif;
+		  font-size:32px;
+		  line-height:40px;
+		  color: #000000;
+		  font-weight:bold;
+	  }
+	  
+	  .subheadlinebig {
+		  font-family:Arial, Helvetica, sans-serif;
+		  font-size:14px;
+		  line-height:18px;
+		  color: #000000;
+	  }
+	  
+	  
+	   .headlinesmall {
+		  font-family:Arial, Helvetica, sans-serif;
+		  font-size:32px;
+		  line-height:40px;
+		  color: #000000;
+		  font-weight:bold;
+		  display: block;
+	  }
+	  
+	  .subheadlinesmall {
+		  font-family:Arial, Helvetica, sans-serif;
+		  font-size:14px;
+		  line-height:18px;
+		  color: #000000;		    
+	  }
+	  
+	  .text-box {
+	 	  background-color: #ffffff;
+	  }
+
+	.custom-button {
+		background-color: #333333;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:11px;
+		line-height:30px;
+		color: #ffffff;
+		width: 100px;
+		text-align: center;
+		padding: 0px 0px 0px 0px!important;
+	}
+
+
+	  .articleoneimage {
+		  background-image:url(images/articleoneimage.jpg);
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  height:100%!important;
+		  width: 100%!important;
+		  display: block;
+	  }
+	  
+
+	  .articlehead {
+		  font-family:Arial, Helvetica, sans-serif;
+		  font-size:32px;
+		  line-height:32px;
+		  color: #000000;
+		  font-weight:bold;
+		  display: block;
+		  padding: 0px 0px 0px 0px!important;
+	  }
+	  
+	  .articletext {
+		  font-family:Arial, Helvetica, sans-serif;
+		  font-size:12px;
+		  line-height:18px;
+		  color: #000000;
+		  display: block;
+	  }	
+	  
+	  
+	 .itemhead {
+		  font-family:Arial, Helvetica, sans-serif;
+		  font-size:20px;
+		  line-height:24px;
+		  color: #000000;
+		  font-weight:bold;
+		  display: block;
+		  padding: 10px 0px;
+	  }
+	  
+	 .itemtext {
+		  font-family:Arial, Helvetica, sans-serif;
+		  font-size:12px;
+		  line-height:18px;
+		  color: #000000;
+		  display: block;
+	  }	
+	
+	.socialmediaimg {
+		  clear: none;
+		  margin: 0px 12px;
+	  }
+	  
+	.termsandcons   {
+		  font-family:Arial, Helvetica, sans-serif;
+		  font-size:13px;
+		  line-height:18px;
+		  color: #aaaaaa;
+	}
+	
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <table class="body">
+      <tr>
+        <td class="center" align="center" valign="top" style="background-color: #f4f3f4">
+          <center>
+
+          <!-- Email Content Start-->
+          
+          
+     <table class="container">
+      <tr>
+        <td>
+          <table class="row">
+            <tr>              
+              <td class="wrapper last">
+                <table class="twelve columns">
+                  <tr>
+                    <td class="center">
+                    <center>
+                      <span class="mirror">Click here to view this email in your browser</span>
+                    </center>
+                    </td>
+  					<td class="expander"></td>                    
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+          
+          
+          
+    <table class="container titletable">
+      <tr>
+        <td>
+          <table class="row">
+            <tr>              
+              <td class="wrapper last">
+                <table class="twelve columns">
+                  <tr>
+                    <td class="titletext left-text-pad">
+                      Alps.
+                    </td>
+					<td class="expander"></td>                    
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+          
+   
+   
+   <table class="container banner">
+      <tr>
+        <td class="bannerheight">
+        
+        <!-- Large Display -->
+        
+          <table class="row hide-for-small">
+            <tr>
+              <td class="wrapper ">
+                <table class="seven columns">
+                  <tr>
+                    <td>
+                      
+                    </td>
+                    <td class="expander"></td>
+                  </tr>
+                </table>
+              </td>
+              <td class="wrapper last">
+                <table class="five columns">
+                  <tr>
+                    <td class="text-pad20">
+                    
+                    
+                    
+                    	<table class="text-box">
+                        	<tr>
+                            	<td class="text-pad20 text-pad-top">
+                                 <span class="headlinebig">Headline</span><br />
+                                 <span class="subheadlinebig">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                <table style="margin: 10px 0px!important;">
+                                	<tr>
+                                    	<td class="custom-button" valign="middle">
+                                        <a href="http://www.profusion.com"><span>Find Out More</span></a>
+                                        </td>
+                                    </tr>
+                                </table>        
+                                
+                                </td>
+                            </tr>
+                        </table>
+                                        
+                        
+                                            
+                    </td>
+                    <td class="expander"></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          
+          <!-- Small Display -->
+          
+            <table class="hide-for-desktop">
+            <tr>
+              <td class="wrapper ">
+                <table class="three columns">
+                  <tr>
+                    <td>
+                      
+                    </td>
+                    <td class="expander"></td>
+                  </tr>
+                </table>
+              </td>
+              
+              <td class="wrapper">
+                <table class="six columns">
+                  <tr>
+                    <td class="text-pad80">
+                    
+                    
+                    
+                    	<table class="text-box">
+                        	<tr>
+                            	<td class="text-pad20 text-pad-top">
+                                 <span class="headlinesmall">Headline</span>
+                                 <span class="subheadlinesmall">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                <table style="margin: 10px 0px!important;">
+                                	<tr>
+                                    	<td class="custom-button" valign="middle" style="width: 100px!important;">
+                                        <a href="http://www.profusion.com"><span>Find Out More</span></a>
+                                        </td>
+                                    </tr>
+                                </table>        
+                                
+                                </td>
+                            </tr>
+                        </table>          
+                    
+                    </td>
+                    <td class="expander"></td>
+                  </tr>
+                </table>
+              </td>
+              
+               <td class="wrapper last">
+                <table class="three columns">
+                  <tr>
+                    <td>
+                      
+                    </td>
+                    <td class="expander"></td>
+                  </tr>
+                </table>
+              </td>
+              
+            </tr>
+          </table>
+          
+          
+          
+          
+          
+        </td>
+      </tr>
+    </table>
+   
+
+
+  
+    <table class="container whitebackground">
+      <tr>
+        <td class="text-pad-top-con-10">
+          <table class="row">
+            <tr>              
+              <td class="wrapper">
+                <table class="six columns">
+                  <tr>
+                    <td valign="middle" class="img-pad-small">
+                    <img src="images/articleoneimage600.jpg" >
+                    </td>
+                    <td class="expander"></td>               
+                  </tr>
+                </table>
+              </td>
+              
+               <td class="wrapper last">
+                <table class="six columns">
+                  <tr>
+                    <td class="text-pad right-text-pad40">
+                      <span class="articlehead">Article 1</span>
+                      <span class="articletext" style="margin: 7px 0px 0px 0px!important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer leo elit, suscipit quis sollicitudin nec, aliquam a nisl. Pellentesque dignissim sagittis diam. Aenean congue, erat quis convallis mollis, neque quam laoreet lacus, nec molestie nulla arcu a risus. Fusce varius posuere eros, ut auctor mauris ultrices tincidunt. </span>
+                    </td>
+                    <td class="expander"></td>                    
+                  </tr>
+                </table>
+              </td>
+              
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>       
+          
+
+    <table class="container whitebackground">
+      <tr>
+        <td>
+          <table class="row">
+            <tr>              
+              <td class="wrapper">
+                <table class="six columns">
+                  <tr>
+                    <td valign="middle" class="img-pad-small">
+                    <img src="images/articletwoimage600.jpg" >
+                      
+                    </td>
+                    <td class="expander"></td>            
+                  </tr>
+                </table>
+              </td>
+              
+               <td class="wrapper last">
+                <table class="six columns">
+                  <tr>
+                    <td class="text-pad right-text-pad40">
+                      <span class="articlehead">Article 2</span>
+                      <span class="articletext" style="margin: 7px 0px 0px 0px!important;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer leo elit, suscipit quis sollicitudin nec, aliquam a nisl. Pellentesque dignissim sagittis diam. Aenean congue, erat quis convallis mollis, neque quam laoreet lacus, nec molestie nulla arcu a risus. Fusce varius posuere eros, ut auctor mauris ultrices tincidunt. </span>
+                    </td>
+                    <td class="expander"></td>                    
+                  </tr>
+                </table>
+              </td>
+              
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>       
+   
+    
+    <table class="container whitebackground">
+      <tr>
+        <td>
+        
+          <table class="row">
+            <tr>              
+              <td class="wrapper">
+                <table class="four columns">
+                  <tr>
+                    <td class="center text-pad-top20">
+                    <center>
+
+                        <img src="images/globe.png" class="center">
+                        
+                      <span class="itemhead">Item 1</span>
+                     
+                     <span class="itemtext">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br /> Integer leo elit, suscipit quis<br> sollicitudin nec, aliquam a nisl.</span>
+                     
+                       </center>
+                    </td>
+                    <td class="expander"></td>                       
+                  </tr>
+                </table>
+              </td>
+              
+              <td class="wrapper">
+                <table class="four columns">
+                  <tr>
+                    <td class="center text-pad-top20">
+                    <center>
+
+                        <img src="images/diamond.png" class="center">
+                        
+                      <span class="itemhead">Item 2</span>
+                     
+                      <span class="itemtext">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br /> Integer leo elit, suscipit quis<br> sollicitudin nec, aliquam a nisl.</span>
+                     
+                       </center>
+                    </td>
+                    <td class="expander"></td>                       
+                  </tr>
+                </table>
+              </td>
+              
+              <td class="wrapper last">
+                <table class="four columns">
+                  <tr>
+                    <td class="center text-pad-top20">
+                    <center>
+
+                        <img src="images/map.png" class="center">
+                        
+                     <span class="itemhead">Item 3</span>
+                     
+                    <span class="itemtext">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br /> Integer leo elit, suscipit quis<br> sollicitudin nec, aliquam a nisl.</span> 
+                     
+                       </center>
+                    </td>
+                    <td class="expander"></td>                       
+                  </tr>
+                </table>
+              </td>
+              
+            </tr>
+          </table>
+          
+        </td>
+      </tr>
+    </table>
+    
+    
+    <table class="container whitebackground">
+      <tr>
+        <td>
+          <table class="row">
+            <tr>  
+            
+            <td class="wrapper">
+                <table class="two columns">
+                  <tr>
+                    <td>          
+                    </td>
+  					<td class="expander"></td>                    
+                  </tr>
+                </table>
+              </td>               
+                        
+              <td class="wrapper">
+                <table class="eight columns">
+                  <tr>
+                    <td class="center">
+                    <center>
+                    <table>
+                    <tr>
+                    <td>
+                    
+                       <a href="http://www.profusion.com"><img src="images/twitter.png" class="socialmediaimg" /></a>
+                       <a href="http://www.profusion.com"><img src="images/googleplus.png" class="socialmediaimg" /></a>
+                       <a href="http://www.profusion.com"><img src="images/facebook.png" class="socialmediaimg" /></a>
+                       <a href="http://www.profusion.com"><img src="images/instagram.png" class="socialmediaimg" /></a>
+                       <a href="http://www.profusion.com"><img src="images/pinterest.png" class="socialmediaimg" /></a>
+                     
+                     </td>
+                     </tr>
+                     </table>
+                      
+                     </center> 
+                    </td>
+  					<td class="expander"></td>                    
+                  </tr>
+                </table>
+              </td>
+              
+              <td class="wrapper last">
+                <table class="two columns">
+                  <tr>
+                    <td>          
+                    </td>
+  					<td class="expander"></td>                    
+                  </tr>
+                </table>
+              </td>    
+              
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    
+
+    
+    
+   <table class="container">
+      <tr>
+        <td class="text-pad-top-con-20">
+          <table class="row">
+            <tr>              
+              <td class="wrapper last">
+                <table class="twelve columns">
+                  <tr>
+                    <td class="termsandcons">
+                    General terms and conditions (T&Cs) set out those arrangements, provisions, requirements, rules and 
+specifications which occur in every transaction that a seller makes. Whether goods and services are sold 
+on a standard basis or to specification, standard terms and conditions of sale (or supply) are a core part 
+of most businesses.<br><br>
+
+The specific, or unique, aspects of the sale or supply of services (eg, any unique specifications, quantity, 
+delivery dates) are set out in a separate order. Make sure that you protect your business interests with 
+professionally prepared Ts & Cs<br><br>
+
+ © 2015
+                    </td>
+  					<td class="expander"></td>                    
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+          
+          
+          <!-- Email Content End -->
+
+          </center>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
